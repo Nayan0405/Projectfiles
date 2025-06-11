@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <style>
+        body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    color: #E0E0E0;
+}
+
+header {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.order-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.order-image {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.order-details {
+    flex-grow: 1;
+    color: #4e4e4e;
+}
+
+.order-details h3 {
+    margin: 0 0 5px;
+    color: black; 
+}
+
+.order-status {
+    font-weight: bold;
+    color: #002366; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1F1F1F;
+    color: #E0E0E0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button {
+    background-color: white; 
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .order-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .order-image {
+        margin-bottom: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Orders</h1>
+</header>
+
+<div class="container">
+    <h2>Your Recent Orders</h2>
+    <div class="order-card">
+        <img src="https://via.placeholder.com/100" alt="iPhone 14 Pro" class="order-image">
+        <div class="order-details">
+            <h3>Order #001</h3>
+            <p>Product: iPhone 14 Pro</p>
+            <p>Quantity: 1</p>
+            <p>Price: $999.00</p>
+            <p class="order-status">Status: Shipped</p>
+        </div>
+        <button>Track Order</button>
+    </div>
+
+    <div class="order-card">
+        <img src="https://via.placeholder.com/100" alt="MacBook Pro" class="order-image">
+        <div class="order-details">
+            <h3>Order #002</h3>
+            <p>Product: MacBook Pro 16"</p>
+            <p>Quantity: 1</p>
+            <p>Price: $2399.00</p>
+            <p class="order-status">Status: Delivered</p>
+        </div>
+        <button>Track Order</button>
+    </div>
+
+    <div class="order-card">
+        <img src="https://via.placeholder.com/100" alt="Apple Watch" class="order-image">
+        <div class="order-details">
+            <h3>Order #003</h3>
+            <p>Product: Apple Watch Series 8</p>
+            <p>Quantity: 2</p>
+            <p>Price: $799.00</p>
+            <p class="order-status">Status: Pending</p>
+        </div>
+        <button>Track Order</button>
+    </div>
+
+    <div class="order-card">
+        <img src="https://via.placeholder.com/100" alt="AirPods Pro" class="order-image">
+        <div class="order-details">
+            <h3>Order #004</h3>
+            <p>Product: AirPods Pro</p>
+            <p>Quantity: 1</p>
+            <p>Price: $249.00</p>
+            <p class="order-status">Status: Canceled</p>
+        </div>
+        <button>Track Order</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Your Store Powered by Plentra Sphere.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+.content-section {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.content-section:hover {
+    transform: translateY(-5px);
+}
+
+.content-section h2 {
+    margin-top: 0;
+    color: black;
+    font-size: 1.7em;
+    position: relative;
+}
+
+.content-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
+.view-page-button {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 12px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.view-page-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.view-page-button span:after {
+    content: "»";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.view-page-button:hover span {
+    padding-right: 15px;
+}
+
+.view-page-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.user-email-subscription {
+    background-color: #dadde3;
+    padding: 12px;
+    outline: none;
+    width: 100%; 
+    max-width: 280px; 
+    color: black;
+    border-radius: 10px;
+    border: 2px solid #9c9c9c;
+    transition: border-color 100ms;
+}
+
+.user-email-subscription:focus {
+    border-color: #515151;
+}
+
+.featured-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.featured-item {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 300px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonials {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #161B22;
+    color: #C9D1D9;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons a {
+    color: #C9D1D9;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #58A6FF;
+}
